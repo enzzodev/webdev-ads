@@ -1,4 +1,5 @@
 const express = require("express")
+<<<<<<< HEAD
 const { engine } = require("express-handlebars")
 const bodyParser = require('body-parser')
 const path = require("path")
@@ -27,4 +28,15 @@ app.get("/sobre/{:id}", (req, res) => {
 
 app.listen(3000, () => {
     console.log('Servidor rodando http://localhost:3000')
+=======
+
+const app = express()
+
+app.use("/", function (req, res){
+    res.send("<h1>Funcionou<h1>")
+})
+
+app.listen(3000, () => {
+    console.log('Servidor rodando em http://localhost:3000')
+>>>>>>> ea5721f7253ef3b2ffe41e5a1a5ace33bb1ac3c2
 })

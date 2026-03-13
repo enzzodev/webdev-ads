@@ -1,32 +1,21 @@
 {
-<<<<<<< HEAD
   "name": "webdev-ads",
   "version": "1.0.0",
-=======
-  "name": "projeto-github",
-  "version": "1.0.0",
   "description": "",
->>>>>>> ea5721f7253ef3b2ffe41e5a1a5ace33bb1ac3c2
   "main": "index.js",
+  "type": "commonjs",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon index.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-<<<<<<< HEAD
-  "description": "",
-  "dependencies": {
-    "body-parser": "^2.2.2",
-    "express": "^5.2.1",
-    "express-handlebars": "^8.0.3",
-    "nodemon": "^3.1.14"
-=======
-  "type": "commonjs",
   "dependencies": {
     "body-parser": "^2.2.2",
     "express": "^5.2.1",
     "express-handlebars": "^8.0.6"
->>>>>>> ea5721f7253ef3b2ffe41e5a1a5ace33bb1ac3c2
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
   }
 }

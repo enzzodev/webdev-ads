@@ -14,14 +14,11 @@ app.set("view engine", "handlebars")
 app.use(express.static(path.join(__dirname, "views/css/")))
 app.use(express.static(path.join(__dirname, "views/js/")))
 
-app.get("/", (req, res) => {
-    res.render("index")
-})
+// IMPORTA AS ROTAS
+const routes = require("./route")
 
-app.get("/sobre/:id", (req, res) => {
-    const id = req.params.id
-    res.render("sobre", { id })
-})
+// USA AS ROTAS 👇 (ESSA LINHA FALTAVA)
+app.use("/", routes)
 
 app.listen(3000, () => {
     console.log("Servidor rodando em http://localhost:3000")

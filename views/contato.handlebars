@@ -3,7 +3,7 @@
 <h1 style="font-size:40px;">Contato</h1>
 
 <p style="font-size:20px;">
-Entre em contato conosco preenchendo o formulário abaixo.
+Preencha o formulário abaixo para simular o envio de dados utilizando rotas no backend com Node.js.
 </p>
 
 </div>
@@ -13,7 +13,7 @@ Entre em contato conosco preenchendo o formulário abaixo.
 
 <h2>📬 Fale Conosco</h2>
 
-<form>
+<form action="/contato" method="POST">
 
 <label>Nome:</label><br>
 <input type="text" name="nome" placeholder="Digite seu nome" style="width:100%; padding:10px; margin-bottom:10px; border-radius:5px; border:none;">
@@ -37,9 +37,28 @@ Enviar
 
 <div class="card">
 
-<h2>📍 Informações</h2>
+<h2>📍 Informações de Contato</h2>
 
-<p><strong>Email:</strong> enzzocrispim@icloud.com </p> </p>- henriquedelacoleta@gmail.com</p>
-<p><strong>Telefone:</strong> (17) 99662-8218 - (17) 99748-5721</p>
+<div style="margin-top:15px; display:flex; flex-direction:column; gap:12px;">
+
+<!-- ENZO -->
+<div style="background:rgba(0,0,0,0.2); padding:15px; border-radius:8px; font-size:18px;">
+    <h2>👤 Enzo Crispim</h2>
+    📧 enzzocrispim@icloud.com<br>
+    📱 (17) 99662-8218<br>
+    📸 @enzzo17
+</div>
+
+<!-- ALLAN -->
+<div style="background:rgba(0,0,0,0.2); padding:15px; border-radius:8px; font-size:18px;">
+    <h2>👤 Allan Delacoleta</h2>
+    📧 henriquedelacoleta@gmail.com<br>
+    📱 (17) 99748-5721<br>
+    📸 @allan_delacoleta
+</div>
+
+</div>
+
+</div>
 
 </div>

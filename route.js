@@ -16,6 +16,7 @@ router.get("/contato", (req, res) => {
 })
 
 router.post("/contato", (req, res) => {
+    console.log(req.body)
     const nome = req.body.nome
     const email = req.body.email
     const mensagem = req.body.mensagem
@@ -25,4 +26,7 @@ router.post("/contato", (req, res) => {
         email,
         mensagem
     })
+
 })
+
+
